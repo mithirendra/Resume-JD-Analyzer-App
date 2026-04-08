@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume / JD Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/3.0.3/jspdf.umd.min.js"></script>
+
+</head>
+<body>
+    
+    <header>
+        <span class="logo">Resume / JD Analyzer</span>
+        <span class="tagline">HR Intelligence Tool</span>
+    </header>
+
+    <main>
+        <p class="section-label">Input</p>
+
+        <div class="panels">
+
+            <!-- JD Panel -->
+            <div class="panel">
+                <p class="panel-title">Job Description</p>
+                <div class="toggle-row">
+                    <button class="toggle-btn active" id="jd-upload-btn">Upload</button>
+                    <button class="toggle-btn" id="jd-paste-btn">Paste</button>
+                </div>
+                <div class="upload-zone" id="jd-upload">
+                    <p>Drag & drop or browse</p>
+                    <span>PDF, DOCX accepted</span>
+                    <input type="file" accept=".pdf, .docx" id="jd-file">
+                </div>
+                <textarea id="jd-paste" placeholder="Paste job description here...."></textarea>
+            </div>
+
+            <!-- Resume Panel -->
+            <div class="panel">
+                <p class="panel-title">Resume</p>
+                <div class="toggle-row">
+                    <button class="toggle-btn active" id="resume-upload-btn">Upload</button>
+                    <button class="toggle-btn" id="resume-paste-btn">Paste</button>
+                </div>
+                <div class="upload-zone" id="resume-upload">
+                    <p>Drag & drop or browse</p>
+                    <span>PDF, DOCX accepted</span>
+                    <input type="file" accept=".pdf, .docx" id="resume-file">
+                </div>
+                <textarea id="resume-paste" placeholder="Paste resume here..."></textarea>
+            </div>
+
+        </div>
+
+        <button class="analyze-btn" id="analyze-btn">Analyze Match</button>
+
+        <!-- Results Section -->
+        <div id="results" class="results-section">
+
+            <div class="divider"></div>
+            <p class="section-label">Results</p>
+
+            <!-- Match Score -->
+            <div class="score-wrapper">
+                <div class="score-ring">
+                    <span class="score-num" id="score-num">78</span>
+                    <span class="score-pct">%</span>
+                </div>
+                <p class="score-label">Match Score</p>
+            </div>
+
+            <!-- Three Columns -->
+            <div class="result-cols">
+
+                <div class="rcol">
+                    <p class="rcol-title green">Matched Keywords</p>
+                    <div class="tag-row" id="matched keywords">
+                        <span class="ktag green">People Analytics</span>
+                        <span class="ktag green">HRBP</span>
+                        <span class="ktag green">Tableau</span>
+                    </div>
+                </div>
+            
+                <div class="rcol">
+                    <p class="rcol-title red">Gaps</p>
+                    <div class="tag-row" id="gaps">
+                        <span class="ktag red">Python</span>
+                        <span class="ktag red">SHRM-SCP</span>
+                        <span class="ktag red">M&A</span>
+                    </div>
+                </div>
+
+                <div class="rcol">
+                    <p class="rcol-title blue">Suggestions</p>
+                    <ul class="suggest-list" id="suggestions">
+                        <li>Add Python to skills section</li>
+                        <li>Quantify OD outcomes</li>
+                        <li>Highlight board reporting</li>
+                    </ul>
+                </div>
+                        
+            </div>
+
+            <!-- Cover Letter -->
+            <div class="full-card">
+                <div class="full-card-header">
+                    <p class="full-card-title">Cover Letter</p>
+                    <button class="copy-btn" id="copy-cover">Copy</button>
+                </div>
+                <div class="full-card-body" id="cover-letter">
+                    Your tailored cover letter will appear here.....
+                </div>
+            </div>
+
+            <!-- Resume Rewriter -->
+            <div class="full-card">
+                <div class="full-card-header">
+                    <p class="full-card-title">Resume Rewriter</p>
+                    <button class="copy-btn" id="copy-resume">Copy All</button>
+                </div>
+                <div class="rewrite-section">
+                    <p class="rewrite-label">Professional Summary</p>
+                    <div class="rewrite-text" id="rewrite-summary">Rewritten summary will appear here...</div>
+                </div>
+                <div class="rewrite-section">
+                    <p class="rewrite-label">Key Achievements</p>
+                    <div class="rewrite-text" id="rewrite-achievements">Rewritten achievements will appear here...</div>
+                </div>
+                <div class="rewrite-section">
+                    <p class="rewrite-label">Work Experience</p>
+                    <div class="rewrite-text" id="rewrite-experience">Rewritten experience will appear here...</div>
+                </div>
+                <div class="rewrite-section">
+                    <p class="rewrite-label">Skills</p>
+                    <div class="rewrite-text" id="rewrite-skills">Rewritten skills will appear here...</div>
+                </div>
+                <div class="rewrite-section">
+                    <p class="rewrite-label">Education</p>
+                    <div class="rewrite-text" id="rewrite-education">Rewritten education will appear here...</div>
+                </div>
+            </div>
+
+            <!-- Action Bar -->
+            <div class="action-bar">
+                <button class="abtn primary" id="download-pdf">Download PDF</button>
+                <button class="abtn">Copy Report</button>
+                <button class="abtn" id="reanalyze-btn">Re-analyze</button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
