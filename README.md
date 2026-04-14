@@ -9,10 +9,8 @@ An AI-powered HR tool that analyzes the match between a Job Description and a Re
   - Matched Keywords
   - Gaps
   - Improvement Suggestions
-  - Tailored Cover Letter
-  - Rewritten Resume Sections (Summary, Achievements, Experience, Skills, Education)
+   Rewritten Resume Sections (Summary, Achievements, Experience, Skills, Education)
 - Download full report as PDF
-- Copy cover letter or rewritten resume sections
 
 ## Tech Stack
 - HTML — structure
