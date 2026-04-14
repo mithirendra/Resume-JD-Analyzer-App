@@ -1,5 +1,5 @@
 # Resume / JD Analyzer
-An AI-powered HR tool that analyzes the match between a Job Description and a Resume, identifies gaps, suggests improvements, generates a tailored cover letter, and rewrites resume sections to better match the role.
+An HR tool that analyzes the match between a Job Description and a Resume, identifies gaps, suggests improvements, generates a tailored cover letter, and rewrites resume sections to better match the role.
 
 ## What it does
 - Upload or paste a Job Description (PDF or DOCX)
@@ -9,7 +9,8 @@ An AI-powered HR tool that analyzes the match between a Job Description and a Re
   - Matched Keywords
   - Gaps
   - Improvement Suggestions
-   Rewritten Resume Sections (Summary, Achievements, Experience, Skills, Education)
+  - Rewritten Resume Sections (Summary, Achievements, Experience, Skills, Education)
+  - Generate Cover Letter, Outreach
 - Download full report as PDF
 
 ## Tech Stack
