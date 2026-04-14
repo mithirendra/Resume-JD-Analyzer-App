@@ -60,7 +60,7 @@ main {
 }
 
 .panel-title {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   color: #4a5568;
   margin-bottom: 14px;
@@ -205,7 +205,7 @@ textarea {
 }
 
 .rcol-title {
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.5px;
   margin-bottom: 12px;
@@ -276,7 +276,7 @@ textarea {
 }
 
 .full-card-title {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 600;
   color: #4a5568;
 }
@@ -314,7 +314,7 @@ textarea {
 }
 
 .rewrite-label {
-  font-size: 11px;
+  font-size: 16px;
   font-weight: 600;
   color: #4a5568;
   margin-bottom: 6px;
@@ -324,6 +324,23 @@ textarea {
   font-size: 13px;
   color: #718096;
   line-height: 1.7;
+}
+
+.secondary-btn {
+  display: block;
+  margin: 0 auto 16px auto;
+  padding: 8px 24px;
+  background: transparent;
+  color: orange;
+  border: 1px solid orange;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.secondary-btn:hover {
+  background: #ffece1;
 }
 
 .action-bar {

@@ -9,16 +9,20 @@
 </head>
 <body>
 
+    <!-- Header -->
     <header>
         <span class="logo">Resume / JD Analyzer</span>
         <span class="tagline">HR Intelligence Tool</span>
     </header>
 
     <main>
+
+        <!-- Input Section -->
         <p class="section-label">Input</p>
 
         <div class="panels">
 
+            <!-- JD Panel -->
             <div class="panel">
                 <p class="panel-title">Job Description</p>
                 <div class="toggle-row">
@@ -33,6 +37,7 @@
                 <textarea id="jd-paste" placeholder="Paste job description here..."></textarea>
             </div>
 
+            <!-- Resume Panel -->
             <div class="panel">
                 <p class="panel-title">Resume</p>
                 <div class="toggle-row">
@@ -49,13 +54,18 @@
 
         </div>
 
+        <!-- Analyze Button -->
         <button class="analyze-btn" id="analyze-btn">Analyze Match</button>
 
+        <!-- Results Section — hidden until Analyze is clicked -->
         <div id="results" class="results-section">
 
             <div class="divider"></div>
-            <p class="section-label">Results</p>
 
+            <!-- Match Analysis -->
+            <p class="section-label">Match Analysis</p>
+
+            <!-- Match Score -->
             <div class="score-wrapper">
                 <div class="score-ring">
                     <span class="score-num" id="score-num">78</span>
@@ -64,8 +74,10 @@
                 <p class="score-label">Match Score</p>
             </div>
 
+            <!-- Three Columns: Keywords, Gaps, Suggestions -->
             <div class="result-cols">
 
+                <!-- Matched Keywords -->
                 <div class="rcol">
                     <p class="rcol-title green">Matched Keywords</p>
                     <div class="tag-row" id="matched-keywords">
@@ -75,6 +87,7 @@
                     </div>
                 </div>
 
+                <!-- Gaps -->
                 <div class="rcol">
                     <p class="rcol-title red">Gaps</p>
                     <div class="tag-row" id="gaps">
@@ -84,6 +97,7 @@
                     </div>
                 </div>
 
+                <!-- Suggestions -->
                 <div class="rcol">
                     <p class="rcol-title blue">Suggestions</p>
                     <ul class="suggest-list" id="suggestions">
@@ -95,33 +109,86 @@
 
             </div>
 
+            <div class="divider"></div>
+
+            <!-- Resume Rewriter Section -->
+            <p class="section-label">Resume Rewriter</p>
+
             <div class="full-card">
                 <div class="full-card-header">
-                    <p class="full-card-title">Resume Rewriter</p>
+                    <p class="full-card-title">Rewritten Resume</p>
                     <button class="copy-btn" id="copy-resume">Copy All</button>
                 </div>
+
+                <!-- Professional Summary -->
                 <div class="rewrite-section">
                     <p class="rewrite-label">Professional Summary</p>
                     <div class="rewrite-text" id="rewrite-summary">Rewritten summary will appear here...</div>
                 </div>
+
+                <!-- Key Achievements -->
                 <div class="rewrite-section">
                     <p class="rewrite-label">Key Achievements</p>
                     <div class="rewrite-text" id="rewrite-achievements">Rewritten achievements will appear here...</div>
                 </div>
+
+                <!-- Work Experience -->
                 <div class="rewrite-section">
                     <p class="rewrite-label">Work Experience</p>
                     <div class="rewrite-text" id="rewrite-experience">Rewritten experience will appear here...</div>
                 </div>
+
+                <!-- Skills -->
                 <div class="rewrite-section">
                     <p class="rewrite-label">Skills</p>
                     <div class="rewrite-text" id="rewrite-skills">Rewritten skills will appear here...</div>
                 </div>
+
+                <!-- Education -->
                 <div class="rewrite-section">
                     <p class="rewrite-label">Education</p>
                     <div class="rewrite-text" id="rewrite-education">Rewritten education will appear here...</div>
                 </div>
+
             </div>
 
+            <div class="divider"></div>
+
+            <!-- Cover Letter & Outreach Section -->
+            <p class="section-label">Cover Letter & Outreach</p>
+
+            <!-- Generate Cover Letter & Outreach Button -->
+            <button class="secondary-btn" id="outreach-btn">Generate Cover Letter & Outreach</button>
+
+            <!-- Cover Letter Output — hidden until button is clicked -->
+            <div class="full-card" id="outreach-card" style="display:none;">
+
+                <!-- Cover Letter -->
+                <div class="full-card-header">
+                    <p class="full-card-title">Cover Letter</p>
+                    <button class="copy-btn" id="copy-cover">Copy</button>
+                </div>
+                <div class="full-card-body" id="cover-letter">
+                    Your tailored cover letter will appear here...
+                </div>
+
+                <!-- LinkedIn Outreach -->
+                <div class="rewrite-section">
+                    <p class="rewrite-label">LinkedIn Outreach</p>
+                    <div class="rewrite-text" id="linkedin-outreach">Your LinkedIn message will appear here...</div>
+                </div>
+
+                <!-- Email Outreach -->
+                <div class="rewrite-section">
+                    <p class="rewrite-label">Email Outreach</p>
+                    <div class="rewrite-text" id="email-outreach">Your email outreach will appear here...</div>
+                </div>
+
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Action Bar -->
             <div class="action-bar">
                 <button class="abtn primary" id="download-pdf">Download PDF</button>
                 <button class="abtn" id="reanalyze-btn">Re-analyze</button>
@@ -131,8 +198,9 @@
 
     </main>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Version 1 Built by MM</p>
+        <p>&copy; 2026 Version 0 Built by MM</p>
     </footer>
 
     <script src="app.js"></script>
