@@ -10,7 +10,6 @@ An HR tool that analyzes the match between a Job Description and a Resume, ident
   - Gaps
   - Improvement Suggestions
   - Rewritten Resume Sections (Summary, Achievements, Experience, Skills, Education)
-  - Generate Cover Letter, Outreach
 - Download full report as PDF
 
 ## Tech Stack
