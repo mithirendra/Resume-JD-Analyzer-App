@@ -17,5 +17,5 @@ An HR tool that analyzes the match between a Job Description and a Resume, ident
 - CSS — styling
 - JavaScript — functionality
 
-## Author
-Built by Mithirendra M
+## Built By
+&copy; 2026 Mithirendra Maniam
