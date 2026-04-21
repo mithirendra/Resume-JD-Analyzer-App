@@ -1,5 +1,5 @@
 # Resume / JD Analyzer
-An HR tool that analyzes the match between a Job Description and a Resume, identifies gaps, suggests improvements, generates a tailored cover letter, and rewrites resume sections to better match the role.
+An HR tool that analyzes the match between a Job Description and a Resume, identifies gaps, suggests improvements, generates a tailored cover letter, and rewrites resume sections to better match the role. This is part of the Talent Acquisition & Talent Management Intelligence System.
 
 ## What it does
 - Upload or paste a Job Description (PDF or DOCX)
